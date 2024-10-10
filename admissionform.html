@@ -2,13 +2,60 @@
 <html lang="en">
     <head>
         <title>Admission Form</title>
-        <style>
-            h1 {
-                text-align: center;
-            }
-        </style>
+        <link rel="stylesheet" href="ad.css">
     </head>
     <body>
         <h1>Admission Form</h1>
+
+        <form id="form" >
+
+            <div class="control">
+                <label for="FullName">Name</label>
+                <input type="text" id="FullName" placeholder="FullName" name="fullName" required>
+            </div>
+
+            <div class="control">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" placeholder="Email" name="email" required>
+            </div>
+
+            <div class="control">
+                <label for="Age">Age</label>
+                <input type="number" id="Age" placeholder="Age" name="Age" required>
+            </div>
+
+            <div class="control">
+                <label for="Gender">Gender</label>
+                <select id="Gender" name="Gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="control">
+                <label for="role">What describes you the best?</label>
+                <select id="role" name="Description" required>
+                    <option value="">Select</option>
+                    <option value="Student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="parttime">PartTime</option>
+                    <option value="fulltime">FullTime</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="control">
+                <label for="recommendation">Would you recommend this job to a Friend?</label>
+                <input type="radio" id="yes" name="recommendation" value="yes">
+                <label for="yes" id="s">Yes</label>
+                <input type="radio" id="no" name="recommendation" value="no" >
+                <label for="no" id="s1">No</label>
+                <input type="radio" id="maybe" name="recommendation" value="maybe">
+                <label for="maybe" id="s2">Maybe</label>
+
+            </div>
+        </form>
     </body>
 </html>

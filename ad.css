@@ -1,0 +1,46 @@
+body {
+    background-color: #05c46b;
+            font-family: Verdana;
+            text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+  
+    background-color: antiquewhite;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #888888;
+    box-shadow: 5px 5px 10px #888888;
+    transition: all 0.5s ease;
+    cursor: auto;
+}
+
+form {
+   width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+
+.control label {
+    display:block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#role, #Gender, #FullName, #Email, #Age{
+    width: 100%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.control input[type="radio"]{
+    display: inline-block;
+}
+
