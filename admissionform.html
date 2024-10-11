@@ -7,7 +7,7 @@
     <body>
         <h1>Admission Form</h1>
 
-        <form id="form" >
+        <form id="form" target="_blank" action="thankyou.html" method="get">
 
             <div class="control">
                 <label for="FullName">Name</label>
@@ -47,14 +47,72 @@
             </div>
 
             <div class="control">
-                <label for="recommendation">Would you recommend this job to a Friend?</label>
-                <input type="radio" id="yes" name="recommendation" value="yes">
-                <label for="yes" id="s">Yes</label>
-                <input type="radio" id="no" name="recommendation" value="no" >
-                <label for="no" id="s1">No</label>
-                <input type="radio" id="maybe" name="recommendation" value="maybe">
-                <label for="maybe" id="s2">Maybe</label>
+                <label>
+                    Would you recommend this Job
+                    to a friend?
+                </label>
+                <label for="recommed-1">
+                    <input type="radio" id="recommed-1" 
+                           name="recommed">Yes
+                      </input>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio" id="recommed-2" 
+                           name="recommed">No
+                      </input>
+                </label>
+                <label for="recommed-3">
+                    <input type="radio" id="recommed-3" 
+                           name="recommed">Maybe
+                      </input>
+                </label>
+            </div>
 
+            <div class="control">
+                <label>Which Languages you know?</label>
+                <label for="lang1">
+                    <input type="checkbox" name="lang1">C</input> 
+                </label>
+                <label for="lang2">
+                    <input type="checkbox" name="lang2">C++</input> 
+                </label>
+                <label for="lang3">
+                    <input type="checkbox" name="lang3">C#</input> 
+                </label>
+                <label for="lang4">
+                    <input type="checkbox" name="lang4">Java</input> 
+                </label>
+                <label for="lang5">
+                    <input type="checkbox" name="lang5">Python</input>
+                </label>
+                <label for="lang6">
+                    <input type="checkbox" name="lang6">JavaScript</input>
+                </label>
+                <label for="lang7">
+                    <input type="checkbox" name="lang7">Go</input>
+                </label>
+                <label for="lang8">
+                    <input type="checkbox" name="lang8">Ruby</input>
+                </label>
+                <label for="lang9">
+                    <input type="checkbox" name="lang9">Swift</input>
+                </label>
+                <label for="lang10">
+                    <input type="checkbox" name="lang10">Kotlin</input>
+                </label>
+            </div>
+
+            <div class="control">
+                <label>Any comments or suggestions</label>
+                <textarea id="comments" name="comments" rows="5" cols="50">Enter your comment here</textarea>
+            </div>
+
+            <div class="control">
+                <button id="submit" type="submit" name="submit">Submit</button>
+            </div>
+
+            <div class="control">
+                <button id="reset" type="reset" name="reset">Reset</button>
             </div>
         </form>
     </body>

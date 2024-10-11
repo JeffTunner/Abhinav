@@ -29,8 +29,9 @@ form {
 
 .control label {
     display:block;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 #role, #Gender, #FullName, #Email, #Age{
@@ -40,7 +41,45 @@ form {
     box-sizing: border-box;
 }
 
-.control input[type="radio"]{
+.control input[type="radio"], .control input[type="checkbox"]{
     display: inline-block;
+    width: auto;
+   
 }
+
+#submit {
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 18px;
+    margin: 8px 0;
+    border: 0px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#submit:hover {
+    opacity: 1;
+}
+
+#reset {
+    background-color: wheat;
+    color: black;
+    padding: 10px 18px;
+    margin: 8px 0;
+    border: 0px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#reset:hover {
+    opacity: 1;
+}
+
+
 
